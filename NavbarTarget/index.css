@@ -16,7 +16,12 @@
         }
     }
     #result{
+        display: flex;
+        margin-top: 255px;
+        justify-content: center;
+        align-items: center;
         color: crimson;
         font-size: 25px;
+        
     }
 }
