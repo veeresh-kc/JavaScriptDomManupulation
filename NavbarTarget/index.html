@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar-action</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="main_container">
+        <div class="nav">
+                <ul><a onclick="home()" href="">HOME</a></ul>
+                <ul><a onclick="about()" href="">ABOUT</a></ul>
+                <ul><a onclick="con()" href="">CONTACT</a></ul>
+        </div>
+        <p id="result"></p>
+    </div>
+
+    <script>
+        function home(){
+            event.preventDefault();
+            document.getElementById("result").innerText="WEL COME TO HOME PAGE";
+        }
+        function about(){
+            event.preventDefault();
+            document.getElementById("result").innerText="WEL COME TO ABOUT PAGE";
+        }
+        function con(){
+            event.preventDefault();
+            document.getElementById("result").innerText="WEL COME TO CONTACT PAGE";
+        }
+    </script>
+</body>
+</html>
