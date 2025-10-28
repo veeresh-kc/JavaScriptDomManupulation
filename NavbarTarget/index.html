@@ -1,22 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar-action</title>
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
     <div class="main_container">
         <div class="nav">
-                <ul><a onclick="home()" href="">HOME</a></ul>
+            <!-- <ul><a onclick="home()" href="">HOME</a></ul>
                 <ul><a onclick="about()" href="">ABOUT</a></ul>
-                <ul><a onclick="con()" href="">CONTACT</a></ul>
+                <ul><a onclick="con()" href="">CONTACT</a></ul> -->
+            <ul><a href="">HOME</a></ul>
+            <ul><a href="">ABOUT</a></ul>
+            <ul><a href="">CONTACT</a></ul>
         </div>
         <p id="result"></p>
     </div>
 
     <script>
+
+        // BY Using a event listeners
+        let res=document.getElementById("result");
+        let anch = document.getElementsByTagName("a");
+        anch[0].addEventListener("click",(e)=>{
+            e.preventDefault();
+            res.innerText="WEL COME TO HOME PAGE";
+        })
+
+        anch[1].addEventListener("click",(e)=>{
+            e.preventDefault();
+            res.innerText="WEL COME TO ABOUT PAGE";
+        })
+
+        anch[2].addEventListener("click",(e)=>{
+            e.preventDefault();
+            res.innerText="WEL COME TO CONATCT PAGE";
+        })
+
+
+        //By using a Event Handlers
+
+        /*
         function home(){
             event.preventDefault();
             document.getElementById("result").innerText="WEL COME TO HOME PAGE";
@@ -29,6 +57,8 @@
             event.preventDefault();
             document.getElementById("result").innerText="WEL COME TO CONTACT PAGE";
         }
+        */
     </script>
 </body>
+
 </html>
